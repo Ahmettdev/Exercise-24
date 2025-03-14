@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(250, 253, 253);
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: sans-serif;
+
+}
+.header header{
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3%;
+    box-shadow: 0 3px  5px rgba(0,0,0,0.2);
+}
+.container .logo{
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgba(240, 150, 150, 0.4);
+}header .nav  nav ul{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+ 
+}
+header .nav  nav ul li{
+    width: 10rem;
+    padding: 2%;
+    margin-left: 2%;
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+    text-align: center;
+    border-radius: 2%;
+  
+}
+header .nav  nav ul li:hover{
+    box-shadow: 2px 2px 5px rgba(130, 134, 134, 0.8);
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.39);
+}
+.presentation{
+    width: 100%;
+    height: fit-content;
+    background-color: #f0e9e9;
+}
+.presentation .cover{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 2%;
+    padding: 40px;
+}
+.presentation .right-side{
+    grid-column: 1 /span 2;
+    justify-content: center;
+    padding: 40px;
+    text-align: left;
+}
+.under-line{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1em;
+    color: blueviolet;
+    text-transform: capitalize;
+}
+.presentation .right-side span{
+    display: inline-block;
+    font-size: 1.9rem;
+    font-weight: 500px;
+    line-height: 1.2em;
+    padding :20px 0;
+    color: rgb(225, 163, 163);
+  
+}
+.container  .btn{
+    padding: 10px;
+    width: 10rem;
+    margin-top: 20px;
+    box-shadow: 3px 2px 6px rgba(130, 134, 134, 0.8);
+    border: none;
+    color: rgb(82, 30, 223);
+    cursor: pointer;
+   font-size: 1rem;
+   font-weight: 500;
+   border-radius: 8px;
+}
+ .btn:hover{
+    box-shadow:  3px 2px 5px rgba(255, 0, 0, 0.4);;
+}
+.presentation .left-side
+{
+    display: flex;
+    justify-content: space-around;
+}
+.presentation .left-side img{
+    width: calc(290px - 20px);
+    height: fit-content;
+    padding: 20px;
+}
+.presentation .left-side .one{
+   align-self: self-end;
+}
+
+
+/* graps secction */
+
+.graps{
+    display: block;
+} .Title-service{
+    display: block;
+    width: 70%;
+    justify-content: center;
+    text-align: center;
+    line-height: 2rem;
+    margin: 5%  auto;
+}
+.graps .Title-service h4, p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 400;
+    color: rgb(197, 201, 197);
+    margin-bottom: 1%;
+}
+.graps .Title-service p{
+    color: #e9aaaa;
+}
+.graps .Title-service h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+    font-size: 2rem;
+}
+
+.graps .services{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+.graps .serve{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 3px 4px rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 10px;
+}
+.graps .services .serve img{
+   border-radius: 10px ;
+    width: 100%;
+    height: fit-content;
+}
+.graps .serve span{
+    display: block;
+    font-size: 1.3rem;
+    text-align: left;
+    margin-block: 2%;
+}
+
+
+
+
+
+/* media quary */
+
+@media screen and (max-width:990px) {
+    .container .left-side {
+        display: none;
+    }
+    .container .right-side{
+        display: block;
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px) {
+    .container .logo{
+        display: block;
+        text-align: center;
+        font-size: 3em;
+    } 
+    .container nav{
+        display: none;
+    }
+    .container .left-side {
+        display: none;
+    }
+    .container .right-side{
+        display: block;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:368px) {
+    .container .logo{
+        display: block;
+        text-align: center;
+        font-size: 2em;
+    } 
+}
